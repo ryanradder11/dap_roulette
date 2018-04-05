@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello World DApp</title>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="css/table.css" rel="stylesheet" type="text/css">
+  <link href="css/particles.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
 </head>
-<body class="container">
-  <h1>A Simple Hello World Voting Application</h1>
-  <div class="table-responsive">
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Candidate</th>
-          <th>Votes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Rama</td>
-          <td id="candidate-1"></td>
-        </tr>
-        <tr>
-          <td>Nick</td>
-          <td id="candidate-2"></td>
-        </tr>
-        <tr>
-          <td>Jose</td>
-          <td id="candidate-3"></td>
-        </tr>
-      </tbody>
-    </table>
+
+<body id="particles-js" class="">
+
+  <div id="room-container">
+    Room: <input type="text" value="test1" id="room" />
   </div>
-  <input type="text" id="candidate" />
-  <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
+  <div id="nickname-container">
+    Nickname: <input type="text" value="test" id="nickname" />
+  </div>
+  <button id="join">Join</button>
+
+  <div class="col-lg-12 text-center">
+    <div id="controls" >
+      <button id="lower">Lower</button>
+      <button id="higher">Higher</button>
+    </div>
+    <div class="col-lg-12" id="container">
+
+
+      <!-- <div id="self" class="field moveAni" style="left: 262px; top: 175px;">test
+        <div id="controls" hidden=hidden>
+              <button id="higher">Higher</button>
+              <button id="lower">Lower</button>
+        </div>
+      </div> -->
+
+      <div id="center">bla bla</div>
+
+    </div>
+
+  </div>
+
 </body>
-<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-<script src="./index.js"></script>
+
+<!-- <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script> -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.rotate.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.pointat.min.js"></script>
+<script type="text/javascript" src="scripts/particles.js"></script>
+<script type="text/javascript" src="scripts/table.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script type="text/javascript" src="scripts/client.js"></script>
+
 </html>

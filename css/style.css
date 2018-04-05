@@ -1,0 +1,17 @@
+button{
+  z-index: 10;
+  position: absolute;
+}
+input{
+  z-index: 10;
+  position: absolute;
+  margin: 10px;
+}
+
+#nickname-container{
+  top: 10px;
+}
+
+#room-container{
+  top:80px;
+}

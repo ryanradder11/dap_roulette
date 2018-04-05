@@ -1,0 +1,37 @@
+ body { padding: 2em; }
+
+#container {
+  width: 100vw;
+  height: 600px;
+  }
+
+.field { position: absolute; background: #f00; }
+
+#crosshair-x { width: 600px; height: 1px; background: #000; position: absolute; left: 0; top: 300px; }
+#crosshair-y { width: 1px; height: 600px; background: #000; position: absolute; left: 300px; top: 0; }
+
+.field {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#self{
+  background: rgb(156, 41, 246) !important;
+}
+
+#self button{
+  position: relative !important;
+}
+
+#controls button{
+  position: relative !important;
+}
+#center{
+  margin-top: 80px;
+  color: white;
+}
+.moveAni {
+    transition: left 400ms ease-out, top 400ms ease-out;
+}
